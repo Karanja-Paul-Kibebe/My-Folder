@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio.</title>
+
+    <!--Internal CSS-->
+    <style>
+        body{
+            background-image: url('spence.jpg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+
+        header, section, footer {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form{
+            display: block;
+            flex-direction: column;
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        h2{
+            font-size: 2.5em;
+        }
+        p{
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        input, textarea{
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav{
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-btn{
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-links li{
+            list-style: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #111;
+            padding: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .nav-links li{
+            margin: 10px 0;
+        }
+
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover{
+            color: #00aaff;
+        }
+
+        .nav-links.show{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MG SPENCE</div>
+        <div class="menu-box">
+            <button class="menu-btn">Menu></button>
+        <ul class="nav-links hidden">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#message">Message</a></li>
+            </ul>
+            </div>
+    </nav>
+
+    <!--Header Section-->
+    <header>
+        <h1>Karanja Paul Kibebe</h1>
+        <p>Future Cloud Engineer & Software Developer</p>
+    </header>
+
+    <!--About Me Section-->
+    <section>
+        <h2>About Me</h2>
+        <p>I am passionate about technology and currently studying Computer Technology at JKUAT. I enjoy learning new things and building cool projects.</p>
+        <ul>
+            <li>Learning to code</li>
+            <li>Cybersecurity enthusiasist</li>
+            <li>Cloud computing fan</li>
+        </ul>
+        </section>
+        
+        <!--Contact Session-->
+        <section>
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:karanjapaul461@gmail.com">karanjapaul461@gmail.com</a></p>
+            <p>Phone: +254796651535</p>
+            <p>
+                Socials:
+                <a href="Karanja paul">LinkedIn</a>
+                <a href="Karanja Kibebe">Github</a>
+                <a href="MG SPENCE">Twitter</a>
+            </p>
+        </section>
+
+        <!--Optional Contact Form-->
+        <section>
+            <h2>Send a Message</h2>
+            <form>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name"><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email"><br />
+
+                <label for="message">Message</label><br />
+                <textarea id="message" name="message" rows="4"></textarea><br />
+
+                <input type="submit" value="Send">    
+            </form>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2025 Karanja Paul Kibebe. All rights reserved.</p>
+        </footer>
+        </body>
+</html>
