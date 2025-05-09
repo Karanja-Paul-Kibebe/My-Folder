@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: Add background to body for better visualization */
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+display: flex;
+justify-content:center;
+align-items: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    /* margin-top: 10%; */
+    background: black;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 6px rgba(255, 255, 255, 0.5);
+    gap: 5px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffda79;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+a:hover{
+    color: #fff;
+}
+
+p{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 orange;
+    transition: all ease 1s;
+    width: 300px;
+    text-align: left;
+}
+
+p:hover{
+    box-shadow: inset 300px 0 0 orange;
+    color: white;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e5ec;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.neumorphic{
+    background-color:#e0e5ec ;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;   
+}
+
+.neumorphic-inset{
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+.neumorphic-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+h1{
+    color: #6d7582;
+    margin-bottom: 20px;
+}
+
+.neumorphic-input{
+    padding: 15px;
+    width: 80%;
+    font-size: 16px;
+    color: #6d7582;
+border: none;
+outline: none;
+margin-bottom: 25px;
+}
+
+.neumorphic-input::placeholder{
+    color: #a3b1c6;
+}
+
+.neumorphic-button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #6d7582;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-button:active{
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
